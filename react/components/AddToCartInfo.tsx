@@ -19,7 +19,7 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
   return (
     <div className={container}>
       {items.map((item: any, index: number) => {
-        console.log(item)
+        console.log("estos son los item", item)
         return (
           <div key={index} className={container__item}>
             <div>
@@ -36,7 +36,7 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
       })}
       <div>
         <p>Tenemos {items.length} items en tu compra</p>
-        <p>Total: {totalizers[0].value}</p>
+        <p>Total: {totalizers[0]?.value}</p>
       </div>
       <ButtonGroup />
     </div>
