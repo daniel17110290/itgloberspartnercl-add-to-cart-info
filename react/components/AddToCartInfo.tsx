@@ -22,20 +22,20 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
         console.log("estos son los item", item)
         return (
           <div key={index} className={container__item}>
-            <div>
-              <img src={item.imageUrls.at1x} />
+            <div >
+              <img className={styles.image} src={item.imageUrls.at1x} />
             </div>
             <div>
               <p>{item.name}</p>
               <p>{item.id}</p>
-              <p>${item.price}</p>
-              <p>Cant:{item.quantity}</p>
+              <p className={styles.price}>$ {item.price}</p>
+              <p>Cant: {item.quantity}</p>
             </div>
           </div>
         )
       })}
       <div>
-        <p>Tenemos {items.length} items en tu compra</p>
+        <p>Tienes {items.length} items en tu compra</p>
         <p>Total: {totalizers[0]?.value}</p>
       </div>
       <ButtonGroup />

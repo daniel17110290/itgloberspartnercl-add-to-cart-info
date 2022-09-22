@@ -1,6 +1,43 @@
 .container{
-    padding: 10px;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
 }
 .container__item{
    margin-bottom: 1px solid white; 
+   border: 1px solid black;
+   padding: 1rem
+}
+.image{
+    width: 50%;
+    margin-top: 1rem;
+}
+.price{
+    color:red
+}
+.button{
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(253, 7, 60);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: 3px 3px 10px;
+}
+.button:hover{
+  color: black;
+}
+.ref{
+  text-decoration: none;
+  color: rgb(253, 7, 60);
+}
+.ref:hover{
+  color: black;
 }
