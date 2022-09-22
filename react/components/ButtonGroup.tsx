@@ -1,14 +1,14 @@
 import React from "react"
+import styles from "./styles.css"
 
 const ButtonGroup = () => {
   return (
     <>
       <div>
-        <a href="/">CHECK OUT</a>
+        <a className={styles.ref} href="/checkout/#/cart">CHECK OUT</a>
       </div>
       <div>
-        <button>CONTINUA COMPRANDO</button>
-        <a href="/">VER CARRITO</a>
+        <button className={styles.button} onClick={() => window.location.href = '/construccion'}>CONTINUA COMPRANDO</button>
       </div>
     </>
   )
