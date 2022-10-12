@@ -1,4 +1,4 @@
-# :bulb: filters custom
+# :bulb: add to cart info
 
 ![image](https://user-images.githubusercontent.com/96321122/195451382-25648aba-e226-475f-9e4c-69e9f06fb407.png)
 
